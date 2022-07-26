@@ -1,36 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head lang="zh-cn">
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>React Mobx</title>
-  <meta name="renderer" content="webkit">
-  <!-- No Baidu Siteapp-->
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <meta name="apple-mobile-web-app-title" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <link rel="shortcut icon" href="/assets/images/favicon.ico">
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_157397_ujac0trx9i.css">
-  <link href="https://cdn.h5ds.com/lib/plugins/swiper.min.css" rel="stylesheet">
-  <link href="https://cdn.bootcss.com/antd/3.23.0-beta.0/antd.min.css" rel="stylesheet">
-  <!-- 编辑器所需第三方资源库 -->
-<!--   <script src="https://cdn.h5ds.com/lib/plugins/swiper.min.js"></script>
-  <script src="https://cdn.h5ds.com/lib/plugins/jquery.min.js"></script>
-  <script src="https://cdn.h5ds.com/lib/plugins/h5ds.vendor.min.js"></script> -->
-  <!-- 外部引入antd -->
-<!--   <script src="https://cdn.bootcss.com/moment.js/2.24.0/moment.min.js"></script>
-  <script src="https://cdn.bootcss.com/antd/3.23.0-beta.0/antd.min.js"></script> -->
+<head>
+    <title>大洋游戏-首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
+			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+		</script>
+    <!-- css -->
+    <link href="http://szdywlkj.com/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://szdywlkj.com/static/css/flexslider.css" type="text/css" media="screen" property="" />
+    <link href="http://szdywlkj.com/static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://xplaymobile.com/favicon.ico" rel="shortcut icon" />
+    <!-- // css -->
+    <!-- font -->
+    <link href="http://szdywlkj.com/static/css/css.css" rel="stylesheet" type="text/css" />
+    <link href="http://szdywlkj.com/static/css/css1.css" rel="stylesheet" type="text/css" />
+    <!-- //font -->
+    <script src="http://szdywlkj.com/static/js/jquery.min.js"></script>
+    <script src="http://szdywlkj.com/static/js/bootstrap.js"></script>
 </head>
 
 <body>
-  <div id="App"></div>
-  Test xiugai 
+    <!-- Header -->
+    <div class="header sub-banner">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hover-effect"><a href="http://szdywlkj.com">首页</a></li>
+                        <li class="hover-effect">
+                            <a href="http://szdywlkj.com/games.html">游戏</a>
+                        </li>
+                        <li class="hover-effect">
+                            <a href="http://szdywlkj.com/contact.html">关于我们</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- //Navbar -->
+
+        <!-- Slider -->
+        <div class="slider">
+            <ul class="rslides" id="slider">
+                <li>
+                    <div class="hoverblur"></div>
+                    <img src="http://szdywlkj.com/static/picture/sgrdzz_banner_1600X500.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+        <!-- //Slider -->
+    </div>
+    <!-- Banner-Slider-JavaScript -->
+    <script src="static/js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $('#slider').responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 800,
+                namespace: 'callbacks',
+                pager: true,
+            });
+        });
+    </script>
+    <!-- //Banner-Slider-JavaScript -->
+    <!-- //Header -->
+
+    <!-- new games -->
+    <div class="new-w3-agile">
+        <div class="container">
+            <h3 style="
+						font-family: Microsoft JhengHei, SimHei;
+						font-weight: 700;
+					">
+                最 新 游 戏
+            </h3>
+            
+            <div class="col-xs-4 col-md-4 new-grid-w3l view view-eighth">
+                <img src="http://szdywlkj.com/static/picture/2048_icon_300x300.jpg" alt=" " />
+                <div class="mask">
+                    <a href="single.html?id=2">
+                        <h4>王者别嚣张</h4>
+                    </a>
+                    <p>
+                        <a href="http://szdywlkj.com/single.html?id=2" class="learn">游戏详情</a>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //new games -->
+
+    <div class="box">
+        <div class="bg-blur"></div>
+        <div class="services-bottom-w3-agileits">
+            <div class="blur"></div>
+            <div class="container">
+                <div class="wthree_info">
+                    <section class="slider">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                
+                                <li>
+                                    <div class="wthree_info_grid">
+                                        <h3>王者别嚣张</h3>
+                                        <p>竞技类游戏.</p>
+                                        <a href="http://szdywlkj.com/single.html?id=2" class="learn">了解更多</a>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- flexSlider -->
+
+                    <script defer="" src="http://szdywlkj.com/static/js/jquery.flexslider.js"></script>
+                    <script type="text/javascript">
+                        $(window).load(function () {
+                            $('.flexslider').flexslider({
+                                animation: 'slide',
+                                start: function (slider) {
+                                    $('body').removeClass('loading');
+                                },
+                            });
+                        });
+                    </script>
+                    <!-- flexSlider -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="copyright">
+        <p>
+            深圳市大洋网络科技有限公司版权所有
+        </p>
+        <p>
+            <a href="http://beian.miit.gov.cn" title="" target="_blank">
+                粤ICP备B2-20220070号</a>
+        </p>
+        <p>抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当</p>
+        <p>适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p>
+    </footer>
+
+    <!-- //footer -->
 </body>
 
 </html>
